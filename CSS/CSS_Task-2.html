@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Vertical Navigation Bar */
+        .vertical-nav {
+            background-color: #555;
+            width: 200px;
+            float: left;
+        }
+
+        .vertical-nav a {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .vertical-nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Horizontal Navigation Bar */
+        .horizontal-nav {
+            display: flex;
+            background-color: #333;
+            height: 50px; /* Set the height to the desired value */
+        }
+
+        .horizontal-nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .horizontal-nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Temporary Data */
+        .nav-item {
+            font-size: 18px;
+        }
+
+        /* Container for side-by-side display */
+        .nav-container {
+            display: flex;
+        }
+
+        /* Space between vertical and horizontal nav */
+        .spacer {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav-container">
+    <div class="vertical-nav">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Java</a>
+        <a href="#" class="nav-item">CSS</a>
+        <a href="#" class="nav-item">HTML</a>
+        <a href="#" class="nav-item">Bootstrap</a>
+    </div>
+
+    <!-- Leave some space between vertical and horizontal nav -->
+    <div class="spacer"></div>
+
+    <div class="horizontal-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+</div>
+
+</body>
+</html>

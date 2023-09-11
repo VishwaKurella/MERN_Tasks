@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        /* Sidebar Link Styles */
+        .sidebar a {
+            padding: 15px;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Content Styles */
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        /* Title Styles */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: violet;
+        }
+
+        /* Text Styles */
+        .text {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        /* Line Separator Styles */
+        .line-separator {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        /* Date and Time Styles */
+        .date-time {
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#home">Home Page</a>
+    <a href="#musings">Musings</a>
+    <a href="#town">My Town</a>
+    <a href="#links">Links</a>
+</div>
+
+<div class="content">
+    <div id="home">
+        <p class="title">My First Styled Page</p>
+        <p>Welcome to my styled page. It lacked images, but at least it has style, and it has links, even if they don't go anywhere.</p>
+        <hr class="line-separator">
+        <p class="date-time">Created on: September 11, 2023, 14:30:00 by myself</p>
+    </div>
+</div>
+
+</body>
+</html>

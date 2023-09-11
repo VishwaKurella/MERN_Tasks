@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Login Container Styles */
+        .login-container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            width: 300px;
+        }
+
+        /* Circular Icon Styles */
+        .icon {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .icon img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        /* Input Styles */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Login Button Styles */
+        .login-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Remember Me Checkbox Styles */
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Cancel and Forgot Password Links Styles */
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .cancel-link {
+            color: #e74c3c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .cancel-link:hover {
+            color: #c43c2c;
+        }
+
+        .forgot-password-link {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .forgot-password-link:hover {
+            color: #258ac4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="icon">
+        <img src="login.jpg" alt="Woman in a Suit">
+    </div>
+    <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    </div>
+    <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </div>
+    <button class="login-button">Login</button>
+    <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember Me</label>
+    </div>
+    <div class="links">
+        <a class="cancel-link" href="#">Cancel</a>
+        <a class="forgot-password-link" href="#">Forgot Password?</a>
+    </div>
+</div>
+
+</body>
+</html>

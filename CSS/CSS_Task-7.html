@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Body Styles */
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f7f7f7; /* Light Gray */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Registration Form Container Styles */
+        .registration-container {
+            background-color: #fff; /* White */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 500px; /* Adjust the width as needed */
+            text-align: left;
+        }
+
+        /* Title Styles */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333; /* Dark Gray */
+        }
+
+        /* Input Label Styles */
+        .input-label {
+            font-weight: bold;
+            color: #555; /* Gray */
+        }
+
+        /* Input Field Styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd; /* Light Gray */
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Radio Button Styles for Gender */
+        .gender-label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .gender-input {
+            margin-right: 10px;
+        }
+
+        /* Register Button Styles */
+        .register-button {
+            background-color: #333; /* Dark Gray */
+            color: #fff; /* White */
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #444; /* Slightly Darker Gray */
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-container">
+    <p class="title">Registration Form</p>
+    <label class="input-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label class="input-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label class="input-label" for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label class="input-label" for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <div>
+        <label class="input-label gender-label">Gender:</label>
+        <input type="radio" class="gender-input" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" class="gender-input" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" class="gender-input" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+    </div>
+
+    <div>
+        <label class="input-label" for="language">Language:</label>
+        <select id="language" name="language" required>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Marathi">Marathi</option>
+            <!-- Add more official Indian languages as needed -->
+        </select>
+    </div>
+
+    <label class="input-label" for="zipcode">Zipcode:</label>
+    <input type="text" id="zipcode" name="zipcode" required>
+
+    <label class="input-label" for="about">About:</label>
+    <textarea id="about" name="about" rows="4"></textarea>
+
+    <div style="text-align: center;">
+        <button class="register-button">Register</button>
+    </div>
+</div>
+
+</body>
+</html>
